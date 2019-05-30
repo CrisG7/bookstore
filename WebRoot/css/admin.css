@@ -1,0 +1,19 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0px;
+	height: 100%;
+}
+.container{
+	height: 100%;
+}
+
+
+.framebox{
+	display: inline-block;
+	background: red;
+	width: 89%;
+	height: 100%;
+	vertical-align: top;
+}

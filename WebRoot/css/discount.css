@@ -1,0 +1,349 @@
+html{
+		width: 100%;
+	}
+	body{
+		background:#dfdfdf;
+		margin:0px auto;
+		overflow-x:hidden;
+	}
+	#bar{
+		height:60px;
+		padding:10px 0px 0px 10px;
+		background:#eee;
+		position:relative;
+        text-align: left;
+	}
+	.logo{
+		display:inline-block;
+		height:50px;
+		/*width:50px;*/
+
+	}
+	.logo img{
+		height:50px;
+	}
+	.find{
+		display:inline-block;
+		width:400px;
+		height:35px;
+		vertical-align:top;
+		position:absolute;
+		left: 40%;
+		margin:7px 0px 0px 0px;
+		transition:all ease 400ms;
+	}
+	input{
+		width: 330px;
+		height: 35px;
+		border:0px;
+		outline: none;
+	}
+	.search{
+		width: 400px;
+		height: 35px;
+		display: inline-block;
+		transition: all ease 400ms;
+	}
+	.search::before{
+		content:"";
+		width: 35px;
+		height: 35px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: -9px; 
+		border-radius: 45px 0px 0px 45px;
+		background:white url(../image/icon/mag-glass.png) no-repeat 50% 50%;
+	}
+	.search::after{
+		content:"";
+		width: 35px;
+		height: 35px;
+		margin: 0px;
+		background: white;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -9px;
+		border-radius: 0px 45px 45px 0px;
+	}
+	.history{
+		display: none;
+	}
+
+
+
+	.user{
+		display:inline-block;
+		height:50px;
+		margin-left:70px;
+		position:absolute;
+		right:100px;
+	}
+	.headicon{
+		display:inline-block;
+		width:50px;
+		height:50px;
+		border-radius:50%;
+		border:1px #aaa solid;
+		overflow:hidden;
+	}
+	.headicon img{
+		width:50px;
+	}
+	.username{
+		display:inline-block;
+		height:50px;
+		vertical-align:top;
+		line-height:50px;
+	}
+	.menu{
+		display:inline-block;
+		width:50px;
+		height:50px; 
+		vertical-align:top;
+		float:right;
+		margin:10px 10px 0px 10px;
+	}
+	.menu_content{
+		display:inline-block;
+		width:30px;
+		height:5px;
+		border-top:5px solid #3e61ad;
+		border-bottom:5px solid #3e61ad;
+		background-color:#3e61ad;
+		padding:5px 0;
+		background-clip:content-box;  
+	}
+	.mt{
+		display:inline-block;
+		height:60px;
+		line-height:60px;
+		padding-left:10px;
+		background:#aaa;
+		width:96%;
+	}
+	.menu ul{
+		list-style: none;
+		padding-left: 0;
+		z-index:2;
+		position:absolute;
+		width:250px;
+		right:-250px;
+		top:55px;
+		display:block;
+		background:#e8e8e8;
+		transition:all ease 200ms;
+		overflow:hidden;
+	}
+	.menu .end{
+		display:inline-block;
+		padding-bottom:150px;
+	}
+	.menu a{
+		display: block;
+		padding: 15px 10px;
+		text-decoration: none;
+		color: black;
+	}
+	.menu li{
+		background-color: #e8e8e8;
+	}
+	.menu li:hover{
+		background-color: #3e61ad;
+	}
+	.menu li:hover > a{
+		color: white;
+	}
+	.menu ul ul{
+		position: absolute;
+		min-width: 150px;
+		display: none;
+	}
+
+
+	.hot_title > .title{
+		display:inline-block;
+		width:100%;
+		height:50px;
+		background:#3e61ad;
+		color:white;
+		font-size:20px;
+		line-height:50px;
+		padding-left:20px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.sale{
+		text-align: center;
+	}
+	.item{
+		width: 1200px;
+		background: white;
+		margin-left: 40px;
+		text-align: left;
+		margin-top: 10px;
+		height: 104px;
+	}
+	.item img{
+		width: 70px;
+		height: 104px;
+	}
+	.item,
+	.item .name,
+	.item .author,
+	.item .book,
+	.item .time,
+	.item .off,
+	.item .origin_price,
+	.item .price,
+	.sale_price{
+		display: inline-block;
+
+	}
+	.item .time{
+		height: 104px;
+		line-height: 104px;
+		vertical-align: top;
+		font-size: 20px;
+	}
+	.sale_price{
+		vertical-align: top;
+		font-size: 20px;
+		margin-left:80px;
+		padding-top: 25px;
+	}
+	.item .name,
+	.item .author{
+		font-size: 22px;
+	}
+	.item .author{
+		font-size: 20px;
+	}
+	.item .book{
+		vertical-align: top;
+		margin-left: 10px;
+		margin-top: 10px;
+		width: 600px;
+	}
+	.item .time{
+		/*margin-left: 450px;*/
+	}
+	.off{
+		vertical-align: top;
+		font-size: 20px;
+		height: 50px;
+		width: 100px;
+		background: green;
+		text-align: center;
+		line-height: 50px;
+		color: #B0D7B0;
+		margin-top: 25px;
+		margin-left: 100px;
+	}
+	.origin_price{
+		font-size: 20px;
+		color:#9c9c9c;
+		text-decoration:line-through;
+		font-weight:400;
+	}
+	.price{
+		font-size: 22px;
+		color:#f40;
+		font-weight:700;
+	}
+
+    .container{
+        text-align: center;
+    }
+
+
+#changepage{
+    width: 60px;
+    height: 36px;
+    display: inline-block;
+    border: 1px #ddd solid;
+    color:blue;
+    text-align: center;
+    line-height: 36px;
+    background-color: white;
+}
+#choose{
+    border: 0px;
+    color:white;z-index: 1;
+    background-color: #317ef3 ;
+}
+.pages{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border: 1px #ddd solid;
+    color:blue;
+    text-align: center;
+    line-height: 36px;
+    background-color: white;
+}
+.bt:hover{
+    background: #d8d8d8;
+    color:#317ef3;
+}
+
+.pagebox{
+    text-align: center;
+    width: 1200px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+
+
+.foot{
+		background:#2c3437;
+		height:100px;
+		text-align:center;
+         margin-top: 10px;
+	}
+	.contract > .about,
+	.contract > .link,
+	.contract > .join{
+		display:inline-block;
+		width:250px;
+		height:35px;
+		background:#3b4244;
+		color:#eee;
+		line-height:35px;
+		margin:20px;
+	}
+	.foot{
+		position:relative;
+	}
+	.foot .author,
+	.foot .payme,
+	.foot .joinus{
+		/*display:inline-block;*/
+		background:#5a5c5d;
+		width:250px;
+		height:250px;
+		color:white;
+		font-size:17px;
+		line-height:30px;
+		position:absolute;
+		bottom:80px;
+		left:337px;
+		display:none;
+	}
+	.foot .author{
+		height:100px;
+	}
+	.foot img{
+		width:250px;
+	}
+	.foot .payme{
+		left:632px;
+	}
+	.foot .joinus{
+		left:927px;
+	}
+	.right{
+		color:white;
+		margin:10px;
+	}

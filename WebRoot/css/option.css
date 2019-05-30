@@ -1,0 +1,527 @@
+html{
+		width: 100%;
+	}
+body{
+		background:#dfdfdf;
+		margin:0px auto;
+		overflow-x:hidden;
+	}
+
+#nav{
+		height:60px;
+		padding:10px 0px 0px 10px;
+		background:#eee;
+		position:relative;
+	}
+	#nav .logo{
+		display:inline-block;
+		height:50px;
+		/*width:50px;*/
+	}
+	#nav .logo img{
+		height:50px;
+	}
+	#nav .find{
+		display:inline-block;
+		width:400px;
+		height:35px;
+		vertical-align:top;
+		position:absolute;
+		left: 40%;
+		margin:7px 0px 0px 0px;
+		transition:all ease 400ms;
+	}
+	#nav .find input{
+		width: 330px;
+		height: 35px;
+		border:0px;
+		outline: none;
+	}
+	#nav .search{
+		width: 400px;
+		height: 35px;
+		display: inline-block;
+		transition: all ease 400ms;
+	}
+	#nav .search::before{
+		content:"";
+		width: 35px;
+		height: 35px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: -9px; 
+		border-radius: 45px 0px 0px 45px;
+		background:white url(../image/icon/mag-glass.png) no-repeat 50% 50%;
+	}
+	#nav .search::after{
+		content:"";
+		width: 35px;
+		height: 35px;
+		margin: 0px;
+		background: white;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -9px;
+		border-radius: 0px 45px 45px 0px;
+	}
+
+
+	#nav .user{
+		display:inline-block;
+		height:50px;
+		margin-left:70px;
+		position:absolute;
+		right:100px;
+	}
+	#nav .headicon{
+		display:inline-block;
+		width:50px;
+		height:50px;
+		border-radius:50%;
+		border:1px #aaa solid;
+		overflow:hidden;
+	}
+	#nav .headicon img{
+		width:50px;
+	}
+	#nav .username{
+		display:inline-block;
+		height:50px;
+		vertical-align:top;
+		line-height:50px;
+	}
+	#nav .menu{
+		display:inline-block;
+		width:50px;
+		height:50px; 
+		vertical-align:top;
+		float:right;
+		margin:10px 10px 0px 10px;
+	}
+	#nav .menu_content{
+		display:inline-block;
+		width:30px;
+		height:5px;
+		border-top:5px solid #3e61ad;
+		border-bottom:5px solid #3e61ad;
+		background-color:#3e61ad;
+		padding:5px 0;
+		background-clip:content-box;  
+	}
+
+	#nav .mt{
+		display:inline-block;
+		height:60px;
+		line-height:60px;
+		padding-left:10px;
+		background:#aaa;
+		width:96%;
+	}
+	#nav .menu ul{
+		list-style: none;
+		padding-left: 0;
+		z-index:2;
+		position:absolute;
+		width:250px;
+		right:-250px;
+		top:55px;
+		display:block;
+		background:#e8e8e8;
+		transition:all ease 200ms;
+		overflow:hidden;
+	}
+	#nav .menu .end{
+		display:inline-block;
+		padding-bottom:250px;
+	}
+	#nav .menu a{
+		display: block;
+		padding: 15px 10px;
+		text-decoration: none;
+		color: black;
+	}
+	#nav .menu li{
+		background-color: #e8e8e8;
+	}
+	#nav .menu li:hover{
+		background-color: #3e61ad;
+	}
+	#nav .menu li:hover > a{
+		color: white;
+	}
+	#nav .menu ul ul{
+		position: absolute;
+		min-width: 150px;
+		display: none;
+	}
+
+
+
+
+
+
+
+	#option{
+		min-height: 550px;
+		margin-top: 25px;
+		text-align: center;
+	}
+	#bar{
+		width: 15%;
+		height: 60%;
+		display: inline-block;
+		background:white;
+		margin-right: 25px; 
+	}
+	#headicon{
+		margin:30px auto;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.bar_option{
+		height: 45px;
+		margin: 10px 0px;
+		border-left: 2px white solid; 
+		line-height: 45px; 
+		cursor:pointer;
+	}
+	.bar_option:hover{
+		border-left: 2px #559ae2 solid; 
+		background-color: #eee;
+	}
+	.checked{
+		border-left: 2px #559ae2 solid; 
+		background-color: #eee;
+	}
+	#container{
+		width: 1000px;
+		min-height:60%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		background:white;
+		position: relative;
+		overflow:hidden;
+	}
+	p{
+		font-size: 20px;
+		margin-left:10px;
+	}
+	span{
+		display: inline-block;
+	}
+	#base{
+		width: 70%;
+		margin:20px;
+	}
+	.base_title{
+		width: 80px;
+		height: 30px;
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+	#alter_info,
+	#account_info,
+	#alter_password{
+		width: 900px;
+		height:450px;
+		padding-left: 50px;
+		display:none;
+	}
+	
+	#shopcar{
+		min-height:470px;
+		
+	}
+	#alter{
+		margin:20px 30px;
+	}
+	#userinfo{
+		width: 120px;
+	}
+	#password{
+		width: 90px;
+	}
+	.alter_item{
+		height: 30px;
+		width: 100px;
+		border: 1px #ddd solid;
+		border-radius: 10%;
+		line-height: 30px;
+		text-align: center;
+		display: inline-block;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+	.alter_item:hover{
+		background: #eee;
+	}
+	.alter_title{
+		width: 80px;
+		height: 30px;
+		margin: 20px 0px 0px 20px;
+	}
+	#save{
+		background: #7CB8C7;
+		color: #ddd;
+		cursor: default;
+		display: inline-block;
+	}
+	#alter_base{
+		display: inline-block;
+		width: 400px;
+	}
+	#pic_bt{
+		width: 100px;
+		background: #4474BB;
+		color: white;
+	}
+	#alter_head{
+		display: inline-block;
+		float: right;
+		text-align: center;
+	}
+	#alter_head >img{
+		width: 150px;
+		height: 150px;
+		margin:25px 70px 0px 70px;
+	}
+	#pic_bt{
+		margin:0px;
+	}
+	#alter_password #base,#alter_password #alter{
+		text-align: center;
+		width: 700px;
+	}
+	/*#alter_password >*/
+	#collects{
+		width: 900px;
+		min-height:500px;
+		padding:5px 0px 10px 40px;
+		display:none;
+	}
+	.c_title,.c_price{
+        text-align: left;
+		display:block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left:10px;
+	}
+    .c_price{
+        font-size:18px ;
+    }
+	.origin{
+		color:#9c9c9c;
+		text-decoration:line-through;
+		font-weight:400;
+		font-size:14px;
+	}
+	.sale{
+		color:#f40;
+		font-weight:700;
+	}
+	.c_item img{
+		width:150px;
+        height:214px;
+	}
+	.c_item{
+		width:150px;
+		/*height:20px;*/
+		text-align:center;
+		display:inline-block;
+        border-radius: 15px;
+        overflow: hidden;
+        background: #eee;
+        margin:10px;
+	}
+	
+
+
+
+
+
+	.order_title{
+		width:930px;
+		height:40px;
+		background-color: #eee;
+		margin:0px 0px 10px -20px;
+		padding-left:20px;
+		line-height:40px;
+	}
+	.order_time{
+		width:110px;
+	}
+	.status span{
+		margin-bottom:10px;
+	}
+	#orders{
+		text-align:left;
+		display:none;
+	}
+	#orders .products{
+		margin-right:85px;
+		width: 250px;
+
+	}
+	#orders .item{
+		border-left:1px #ddd solid;
+		border-right:1px #ddd solid;
+		padding: 0px 20px 10px 20px;
+	}
+	#orders .prices,
+	#orders .nums,
+	#orders .pay,
+	#orders .status,
+	#orders .ctrl{
+		width:100px;
+	}
+	.cart{
+		width: 950px;
+		margin: 10px auto;  /*水平居中*/
+		min-height:470px;
+		position:relative;
+	}
+	.cart-header,
+	.item,
+	.cart-footer{
+		background-color: #eee;
+		padding: 10px 20px;
+		border-bottom: 1px solid #ccc;
+		margin-top: 10px;
+	}
+	.item{
+		background: white;
+	}
+	.cart-footer{
+		width: 95%;
+		text-align: right;
+		position:absolute;
+		bottom:5px;
+	}
+	.box{
+		height:60px;
+	}
+	.cart-header div,
+	.item div{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.chkall{
+		width: 116px;
+	}
+	.chkbx{
+		width: 30px;
+	}
+	.image, .image img{
+		width: 70px;
+	}
+	.product{
+		width: 250px;
+		margin-left: 10px;
+	}
+	.price,
+	.numinput,
+	.sum,
+	.del,
+	.ctrl{
+		width: 120px;
+	}
+	.price,
+	.sum,
+	.del,
+	.ctrl{
+		text-align: right;
+	}
+	.numinput{
+		text-align: center;
+		position: relative;  /* 父容器相对定位 */
+		overflow: hidden;  /* 溢出隐藏 */
+        height: 24px;
+	}
+	.price{
+		padding-right: 30px;
+	}
+	.decrease, .increase, .num {
+        border: 1px solid #ddd;
+        float: left;
+        /*高度与行高一致，则垂直对齐内部文本*/
+        height: 20px;
+        line-height: 20px;
+        padding: 1px;
+        text-align: center;
+    }
+	.decrease, .increase{
+		width: 20px;
+		text-decoration: none;
+		background-color: #f6f6f6;
+		color: #666;
+		font-family: Arial;
+	}
+	.num{
+		width: 50px;
+		border-width: 1px 0;
+		font: 14px Arial;  /* 使输入框的字体与动画元素的字体一样，达到重合效果 */
+        height: 100%;
+	}
+	.item .sum{
+		font-weight: bold;
+	}
+	.count,
+	.total{
+		color: red;
+		font-weight: bold;
+	}
+	.total{
+		font-size: 1.5em;
+	}
+    .settle{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: inline-block;
+        background: #559ae2;
+        height:53px;
+        width: 90px;
+        text-align: center;
+        color:#eeeeee;
+        line-height: 53px;
+        font-size: 18px;
+        border: 0px;
+    }
+    .box2{
+        display: inline-block;
+        width: 100px;
+    }
+	.num-span{  /* 动画元素的类，样式设计成与输入框重合并对齐 */
+		position: absolute;
+		left: 24px;
+		width: 50px;
+		height: 40px;  /* 两行：20px*2 */
+		border: 1px solid transparent;
+		border-width: 1px 0;
+		font: 14px Arial;  /* 与.num的字体一样 */
+		line-height: 21px;
+	}
+	.del{
+		cursor: pointer;
+	}
+
+
+#myform{
+    display: inline-block;
+}
+
+.logout{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    padding-left: 40px;
+}
+.logout input{
+    width: 50px;
+    height: 30px;
+
+}

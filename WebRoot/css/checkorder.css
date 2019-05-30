@@ -1,0 +1,73 @@
+.order_title{
+    width:930px;
+    height:40px;
+    background-color: #eee;
+    margin:0px 0px 10px -20px;
+    padding-left:20px;
+    line-height:40px;
+}
+.order_time{
+    width:110px;
+}
+.status span{
+    margin-bottom:10px;
+}
+#orders{
+    text-align:left;
+}
+#orders .products{
+    margin-right:85px;
+    width: 250px;
+
+}
+#orders .item{
+    border-left:1px #ddd solid;
+    border-right:1px #ddd solid;
+    padding: 0px 20px 10px 20px;
+}
+#orders .prices,
+#orders .nums,
+#orders .pay,
+#orders .status,
+#orders .ctrl{
+    width:100px;
+}
+.cart{
+    width: 950px;
+    margin: 10px auto;  /*水平居中*/
+    min-height:470px;
+    position:relative;
+}
+.cart-header,
+.item,
+.cart-footer{
+    background-color: #eee;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+}
+.item{
+    background: white;
+}
+.cart-footer{
+    width: 95%;
+    text-align: right;
+    position:absolute;
+    bottom:5px;
+}
+.box{
+    height:60px;
+}
+.cart-header div,
+.item div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image, .image img{
+    width: 70px;
+}
+.product{
+    width: 250px;
+    margin-left: 10px;
+}

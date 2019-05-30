@@ -1,0 +1,617 @@
+html{
+		width: 100%;
+	}
+	body{
+		background:#dfdfdf;
+		margin:0px auto;
+		overflow-x:hidden;
+	}
+	#bar{
+		height:60px;
+		padding:10px 0px 0px 10px;
+		background:#eee;
+		position:relative;
+	}
+	.logo{
+		display:inline-block;
+		height:50px;
+		/*width:50px;*/
+	}
+	.logo img{
+		height:50px;
+	}
+	.find{
+		display:inline-block;
+		width:400px;
+		height:35px;
+		vertical-align:top;
+		position:absolute;
+		left: 40%;
+		margin:7px 0px 0px 0px;
+		transition:all ease 400ms;
+	}
+	input{
+		width: 330px;
+		height: 35px;
+		border:0px;
+		outline: none;
+	}
+	.search{
+		width: 400px;
+		height: 35px;
+		display: inline-block;
+		transition: all ease 400ms;
+	}
+	.search::before{
+		content:"";
+		width: 35px;
+		height: 35px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: -9px; 
+		border-radius: 45px 0px 0px 45px;
+		background:white url(../image/icon/mag-glass.png) no-repeat 50% 50%;
+	}
+	.search::after{
+		content:"";
+		width: 35px;
+		height: 35px;
+		margin: 0px;
+		background: white;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -9px;
+		border-radius: 0px 45px 45px 0px;
+	}
+	.history{
+		display: none;
+	}
+
+
+
+	.user{
+		display:inline-block;
+		height:50px;
+		margin-left:70px;
+		position:absolute;
+		right:100px;
+	}
+	.headicon{
+		display:inline-block;
+		width:50px;
+		height:50px;
+		border-radius:50%;
+		border:1px #aaa solid;
+		overflow:hidden;
+	}
+	.headicon img{
+		width:50px;
+	}
+	.username{
+		display:inline-block;
+		height:50px;
+		vertical-align:top;
+		line-height:50px;
+	}
+	.menu{
+		display:inline-block;
+		width:50px;
+		height:50px; 
+		vertical-align:top;
+		float:right;
+		margin:10px 10px 0px 10px;
+	}
+	.menu_content{
+		display:inline-block;
+		width:30px;
+		height:5px;
+		border-top:5px solid #3e61ad;
+		border-bottom:5px solid #3e61ad;
+		background-color:#3e61ad;
+		padding:5px 0;
+		background-clip:content-box;  
+	}
+	.mt{
+		display:inline-block;
+		height:60px;
+		line-height:60px;
+		padding-left:10px;
+		background:#aaa;
+		width:96%;
+	}
+	.menu ul{
+		list-style: none;
+		padding-left: 0;
+		z-index:2;
+		position:absolute;
+		width:250px;
+		right:-250px;
+		top:55px;
+		display:block;
+		background:#e8e8e8;
+		transition:all ease 200ms;
+		overflow:hidden;
+	}
+	.menu .end{
+		display:inline-block;
+		padding-bottom:250px;
+	}
+	.menu a{
+		display: block;
+		padding: 15px 10px;
+		text-decoration: none;
+		color: black;
+	}
+	.menu li{
+		background-color: #e8e8e8;
+	}
+	.menu li:hover{
+		background-color: #3e61ad;
+	}
+	.menu li:hover > a{
+		color: white;
+	}
+	.menu ul ul{
+		position: absolute;
+		min-width: 150px;
+		display: none;
+	}
+
+	
+	.slide{
+		position: relative;  /* 容器相对定位，容器的子元素相对于容器绝对定位 */
+		width: 1519px;
+		height: 649px;
+		margin: auto;  /* 使具有固定宽度的元素水平居中 */
+		overflow: hidden;  /* 溢出容器则不显示 */
+		z-index:0;
+	}
+	.slide > .item{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;  /* 图片默认不显示 */
+	}
+	.slide > .active{
+		display: block;  /* 具有active类的图片才显示 */
+	}
+
+	.slide > .pager{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 30px;
+		text-align: center;
+	}
+	.slide > .pager > .round{
+		display: inline-block;  /* 使圆圈左右排列成一行 */
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;  /* 圆形 */
+		border: 1px solid rgba(128, 128, 128, 0.5);
+		background-color: green;
+		color: white;
+		text-align: center;
+		line-height: 20px;
+		font-family: simsun;
+		font-size: 16px;
+		cursor: pointer;  /* 手形光标 */
+	}
+	.slide > .pager > .active{
+		background-color: white;
+	}
+
+	.slide > .control{
+		position: absolute;
+		width: 40px;
+		height: 80px;
+		background-color: rgba(128, 128, 128, 0.5);
+		top: 50%;  /* 与下句一起实现垂直居中 */
+		margin-top: -40px;
+		text-decoration: none;
+		font-size: 30px;
+		color: white;
+		text-align: center;
+		line-height: 80px;
+		font-family: simsun;
+	}
+	.slide:hover > .control{
+		background-color: rgba(128, 128, 128, 0.9);
+	}
+	.slide > .prev{
+		left: 0;
+	}
+	.slide > .next{
+		right: 0;
+	}
+	
+	.items{
+		display:inline-block;
+		width:1350px;
+		height:348.4px;
+		overflow:hidden;
+		white-space: nowrap;
+		margin-top: 10px;
+		background: white;
+	}
+	#dis_sale{
+		text-align:center;
+	}
+	.dis_book{
+		display:inline-block;
+		width:200px;
+		margin:10px;
+		text-align:left;
+		position:relative;
+		white-space: normal;
+		background:white;
+
+	}
+	.dis_book > .name,
+	.dis_book > .price,
+    .dis_book > .origin_price{
+		display:inline-block;
+		width:200px;
+		text-align: left;
+		padding-left: 5px;
+	}
+	.dis_book > .price{
+        font-size: 20px;
+		color:#d50624;
+        width: 75px;
+	}
+    .dis_book > .origin_price{
+        color:#9c9c9c;
+        text-decoration:line-through;
+        font-weight:400;
+        font-size:14px;
+        width: 90px;
+    }
+	.dis_book img{
+		width:200px;
+        height: 282px;
+	}
+	.ctrl{
+		display:inline-block;
+		width: 40px;
+		height: 80px;
+		background-color:#dfdfdf;
+		text-decoration: none;
+		font-size: 30px;
+		color: #777777;
+		margin:120px 10px 0px 10px;
+		line-height:80px;
+		vertical-align:top;
+		text-align: center;
+		font-family: simsun;
+		cursor:pointer;
+	}
+	.ctrl:hover{
+		background-color:#ccc;
+	}
+	#discount p{
+		padding-left:20px;
+		font-size:25px;
+		text-align: center;
+		padding-right: 15px;
+		margin:0px;
+	}
+	#discount hr{
+		width:50px;
+		border:none;
+		border-top:1px black solid;
+	}
+	#discount{
+		background: white;
+		padding-top: 15px;
+	}
+
+	
+
+	.hot_sale{
+		display:inline-block;
+		width:60%;
+		height:400px;
+		margin:15px;
+		margin-bottom:40px;
+	}
+	.hot_title > .title{
+		display:inline-block;
+		width:70%;
+		height:50px;
+		background:#3e61ad;
+		color:white;
+		font-size:20px;
+		line-height:50px;
+		padding-left:20px;
+	}
+	.hot_title .more{
+		display:inline-block;
+		width:20%;
+		height:50px;
+		line-height:50px;
+		padding-left:20px;
+		color:#ddd;
+		font-size:20px;
+		background:#aaa;
+		margin-left:-5px;
+	}
+	.hot_item > .name,
+	.hot_item > .price,
+    .hot_item > .origin_price{
+		display:inline-block;
+		width:200px;
+		/*margin:10px;*/
+	}
+	.hot_item{
+		display:inline-block;
+		width:200px;
+		background:white;
+		margin:10px 15px 0px 0px;
+        padding-bottom: 10px;
+	}
+	.more:hover{
+		background:#9a9c9d;
+	}
+	.hot_item,
+	.dis_book,
+	.new_item,
+	.more{
+		cursor:pointer;
+	}
+	.hot_item img{
+		width:200px;
+        height: 285.7px;
+	}
+	.hot_item > .name{
+		font-size:18px;
+		margin-bottom:0px;
+        margin-left: 10px;
+	}
+	.hot_item > .price{
+        width: 80px;
+		margin-top:0px;
+        font-size: 20px;
+		/*margin-bottom:15px;*/
+		color:#d50624;
+        margin-left: 10px;
+	}
+    .hot_item >.origin_price{
+        width: 90px;
+        margin-left: 5px;
+        color:#9c9c9c;
+        text-decoration:line-through;
+        font-weight:400;
+        font-size:14px;
+    }
+
+	.new_book{
+		display:inline-block;
+		width:35%;
+		vertical-align:top;
+		margin:15px;
+		margin-left:0px;
+		margin-bottom:40px;
+		height:408px;
+	}
+	.new_books{
+		background: white;
+		margin-top: 10px;
+	}
+	.new_book > .hot_title >.more{
+		padding-right: 13px;
+	}
+	.new_item{
+		display:inline-block;
+		margin-top:10px;
+		margin-left: 10px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #ccc;
+	}
+	.new_item > .intro > .name{
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	.new_item > .intro{
+		display:inline-block;
+		width:420px;
+		word-wrap: break-word;
+		vertical-align: top
+	}
+	.new_item img{
+		width: 70px;
+	}
+    .new_item .tro{
+        height: 65px;
+        width: 420px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        word-break: break-all;
+        margin-left:10px;
+    }
+
+	.hot_comment > .hot_title{
+		width:100%;
+		margin-bottom:20px;
+	}
+	.hot_comment > .hot_title > .title{
+		width:100%;
+	}
+
+	.hot_comment{
+		display:inline-block;
+		width:60%;
+		text-align:left;
+		padding-left:20px;
+		margin-top:20px;
+		margin-bottom:20px;
+
+	}
+	.comment{
+		width:100%;
+		height:144.5px;
+		display:inline-block;
+		padding:10px;
+		border-bottom:1px #999 solid;
+		background:white;
+	}
+	.comment .bk{
+		width:100px;
+		margin-right:10px;
+	}
+	.comment > .user_comment > .hc{
+		width:50px;
+		height:50px;
+		border-radius:50%;
+		vertical-align:top;
+		margin-right:5px;
+	}
+	.user_comment > .name,
+	.user_comment > .time{
+		vertical-align:top;
+		display:inline-block;
+		margin-top:12px;
+		font-size:17px;
+	}
+	.user_comment > .time{
+		font-size:15px;
+		margin-top:15px;
+		margin-left:7px;
+		color:#999;
+	}
+	.user_comment > .content{
+		width:760px;
+		display:inline-block;
+		word-wrap:break-word;
+		margin-top:15px;
+	}
+	.user_comment{
+		display:inline-block;
+		vertical-align:top;
+	}
+
+	.week_book{
+		display:inline-block;
+		width:33%;
+		vertical-align:top;
+		margin:20px 0px 20px 40px;
+
+	}
+	.week_book > .hot_title{
+		margin-bottom:20px;
+	}
+	.week_book > .hot_title > .title{
+		width:100%;
+	}
+
+	.week_book >.book{
+		display:inline-block;
+		width:521px;
+	}
+	.week_book img{
+		width:150px;
+	}
+	.week_book .book_info{
+		display:inline-block;
+		width:320px;
+		vertical-align:top;
+		margin-left:20px;
+	}
+	.week_book .book_name{
+		display:inline-block;
+		font-size:27px;
+		margin-bottom:15px;
+	}
+	.week_book .author{
+		font-size:20px;
+		display:inline-block;
+		margin-bottom:15px;
+	}
+	.week_book > .book{
+		padding:10px;
+		display:inline-block;
+		width:100%;
+		background:white;
+		border-bottom:1px #aaa solid;
+	}
+	.week_book .intro{
+		display:inline-block;
+		width:320px;
+        height:210px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+	}
+
+	.foot{
+		background:#2c3437;
+		height:100px;
+		text-align:center;
+	}
+	.contract > .about,
+	.contract > .link,
+	.contract > .join{
+		display:inline-block;
+		width:250px;
+		height:35px;
+		background:#3b4244;
+		color:#eee;
+		line-height:35px;
+		margin:20px;
+	}
+	.foot{
+		position:relative;
+	}
+	.foot .author,
+	.foot .payme,
+	.foot .joinus{
+		display:inline-block;
+		background:#5a5c5d;
+		width:250px;
+		height:250px;
+		color:white;
+		font-size:17px;
+		line-height:30px;
+		position:absolute;
+		bottom:80px;
+		left:337px;
+		display:none;
+	}
+	.foot .author{
+		height:100px;
+	}
+	.foot img{
+		width:250px;
+	}
+	.foot .payme{
+		left:632px;
+	}
+	.foot .joinus{
+		left:927px;
+	}
+	.right{
+		color:white;
+		margin:10px;
+	}
+
+    a{
+        text-decoration: none;
+    }
+
+
+    .logout{
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        padding-left: 40px;
+    }
+    .logout input{
+        width: 50px;
+        height: 30px;
+
+    }
+

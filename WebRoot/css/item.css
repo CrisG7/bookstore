@@ -1,0 +1,472 @@
+.book_info{
+    display: inline-block;
+    width: 660px;
+    margin: 20px 0px 0px 150px;
+    /*margin-left: 100px;*/
+    background: white;
+    padding: 0px 50px 20px 50px;
+}
+
+.title h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #494949;
+}
+
+.book_cover{
+    height: 186px;
+    width: 127px;
+}
+
+.book_cover img{
+    height: 100%;
+}
+
+.p1{
+    /*font: 12px Arial, Helvetica, sans-serif;*/
+    line-height: 150%;
+    color: #666666;
+    display: inline-block;
+    overflow: hidden;
+
+}
+.p2{
+    display: inline-block;
+    width: 180px;
+    overflow: hidden;
+    height:22.4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 150%;
+}
+
+.book_details{
+    font: 15px Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.book_cover{
+    display: inline-block;
+}
+
+.add_item, .buy_item{
+    color: #ececec;
+    border-radius: 3px;
+    text-align: center;
+    width: 90px;
+    height: 30px;
+    background-color: #008ee1;
+    margin: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.book_introduce h2{
+    color: #008ee1;
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+.author_introduce h2{
+    color: #008ee1;
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+.content{
+    font: 13px Arial, Helvetica, sans-serif;
+    line-height: 1.62;
+    text-indent: 25px;
+}
+
+.grade{
+    border-left: 1px solid #ececec;
+    display: inline-block;
+    height: 186px;
+    vertical-align: top;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.grade{
+    padding-left: 5px;
+    color: #666666;
+}
+
+.grade_num{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #494949;
+}
+
+.recommendation{
+    line-height: 1.62;
+}
+
+.recommendation h2{
+    color: #008ee1;
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+.book_first{
+    display: inline-block;
+    height: 186px;
+    width: 127px;
+    margin-right: 29px;
+}
+
+.book_first img{
+    height: 100%;
+}
+
+.book_title{
+    text-align: center;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+
+.book_second{
+    display: inline-block;
+    height: 186px;
+    width: 127px;
+    margin-top: 20px;
+    margin-right: 29px;
+}
+
+.book_second img{
+    height: 100%;
+}
+
+.book_more{
+    font: 13px Arial, Helvetica, sans-serif;
+}
+
+.book_more a{
+    color: #008ee1;
+    cursor: pointer;
+}
+
+.comment-head{
+    margin: 0 0 5px 0;
+}
+
+.comment-head h2{
+    float: left;
+    color: #008ee1;
+    font: 20px Arial, Helvetica, sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.comment-top-right{
+    float: right;
+}
+
+.textareabox{
+    clear: both;
+}
+
+.comment-body{
+    display: inline-block;
+    min-height: 205px;
+    width: 660px;
+    margin: 0px 0px 20px 150px;
+    background: white;
+    padding: 0px 50px 20px 50px;
+}
+
+
+.textareabox textarea{
+    width: 640px;
+    height: 100px;
+    border: 1px solid #008ee1;
+    resize: none;
+}
+
+.submit-box a{
+    display: block;
+    padding: 0 15px 0 0;
+    margin: 10px 0 0 0;
+    float: left;
+    color: #666;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.submit-box input{
+    float: right;
+    width: 90px;
+    height: 30px;
+    background-color: #008ee1;
+    border: 0 none;
+    font: 14px/30px "Microsoft YaHei";
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin:10px 0 0 0;
+}
+
+
+.comment-section{
+    clear: both;
+}
+
+.hot {
+    border-bottom: 1px solid #ececec;
+    font: 14px/30px "Microsoft YaHei";
+}
+
+.hot h3{
+    color: #008ee1;
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+.all h3{
+    color: #008ee1;
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+.all {
+    border-bottom: 1px solid #ececec;
+    font: 14px/30px "Microsoft YaHei";
+}
+
+.comment-hot{
+    width: 640px;
+    margin: 15px 0;
+    border-bottom: 1px solid #ececec;
+    clear: both;
+}
+
+.comment-face img{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
+}
+
+.comment-item{
+    vertical-align: top;
+    width: 580px;
+    display: inline-block;
+}
+
+.comment-time{
+    font-size: 10px;
+    color: #ADADAD;
+    text-align: right;
+}
+
+.span-time{
+    padding: 0 5px 0 0;
+    border-right: 1px solid #ADADAD;
+}
+
+.comment-item a{
+    color: #666666;
+}
+
+.comment-item{
+    font: 13px Arial, Helvetica, sans-serif;
+}
+
+.likes{
+    cursor: pointer;
+}
+
+.add_item{
+    cursor: pointer;
+}
+.sc{
+    cursor: default;
+    background-color:#494949;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#nav{
+    height:60px;
+    padding:10px 0px 0px 10px;
+    background:#eee;
+    position:relative;
+}
+#nav .logo{
+    display:inline-block;
+    height:50px;
+    /*width:50px;*/
+}
+#nav .logo img{
+    height:50px;
+}
+#nav .find{
+    display:inline-block;
+    width:400px;
+    height:35px;
+    vertical-align:top;
+    position:absolute;
+    left: 40%;
+    margin:7px 0px 0px 0px;
+    transition:all ease 400ms;
+}
+#nav .find input{
+    width: 330px;
+    height: 35px;
+    border:0px;
+    outline: none;
+}
+#nav .search{
+    width: 400px;
+    height: 35px;
+    display: inline-block;
+    transition: all ease 400ms;
+}
+#nav .search::before{
+    content:"";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -9px;
+    border-radius: 45px 0px 0px 45px;
+    background:white url(../image/icon/mag-glass.png) no-repeat 50% 50%;
+}
+#nav .search::after{
+    content:"";
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+    background: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -9px;
+    border-radius: 0px 45px 45px 0px;
+}
+
+
+#nav .user{
+    display:inline-block;
+    height:50px;
+    margin-left:70px;
+    position:absolute;
+    right:100px;
+}
+#nav .headicon{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px #aaa solid;
+    overflow:hidden;
+}
+#nav .headicon img{
+    width:50px;
+}
+#nav .username{
+    display:inline-block;
+    height:50px;
+    vertical-align:top;
+    line-height:50px;
+}
+#nav .menu{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    vertical-align:top;
+    float:right;
+    margin:10px 10px 0px 10px;
+}
+#nav .menu_content{
+    display:inline-block;
+    width:30px;
+    height:5px;
+    border-top:5px solid #3e61ad;
+    border-bottom:5px solid #3e61ad;
+    background-color:#3e61ad;
+    padding:5px 0;
+    background-clip:content-box;
+}
+
+#nav .mt{
+    display:inline-block;
+    height:60px;
+    line-height:60px;
+    padding-left:10px;
+    background:#aaa;
+    width:96%;
+}
+#nav .menu ul{
+    list-style: none;
+    padding-left: 0;
+    z-index:2;
+    position:absolute;
+    width:250px;
+    right:-250px;
+    top:55px;
+    display:block;
+    background:#e8e8e8;
+    transition:all ease 200ms;
+    overflow:hidden;
+}
+#nav .menu .end{
+    display:inline-block;
+    padding-bottom:150px;
+}
+#nav .menu a{
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: black;
+}
+#nav .menu li{
+    background-color: #e8e8e8;
+}
+#nav .menu li:hover{
+    background-color: #3e61ad;
+}
+#nav .menu li:hover > a{
+    color: white;
+}
+#nav .menu ul ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+body{
+    background:#dfdfdf;
+    margin:0px auto;
+    overflow-x:hidden;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.logout{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    padding-left: 40px;
+}
+.logout input{
+    width: 50px;
+    height: 30px;
+
+}
